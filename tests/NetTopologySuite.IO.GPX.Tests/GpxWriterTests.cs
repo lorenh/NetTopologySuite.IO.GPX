@@ -66,7 +66,7 @@ namespace NetTopologySuite.IO
                     XNamespace ns = "http://www.mycustomnamespace.net/xml";
 
                     var gpxWriterSettings = new GpxWriterSettings();
-                    gpxWriterSettings.Namespaces.Add(new GpxNamespace("ABC", ns.NamespaceName));
+                    gpxWriterSettings.Namespaces["ABC"] = new Uri(ns.NamespaceName);
 
                     var gpxMetadata = new GpxMetadata("Creator");
                     var features = new List<IFeature>();

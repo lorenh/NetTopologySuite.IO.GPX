@@ -40,6 +40,6 @@ namespace NetTopologySuite.IO
         /// <summary>
         /// Gets the namespaces.
         /// </summary>
-        public List<GpxNamespace> Namespaces { get; } = new List<GpxNamespace>();
+        public Dictionary<string, Uri> Namespaces { get; } = new Dictionary<string, Uri>();
     }
 }

@@ -207,7 +207,7 @@ namespace NetTopologySuite.IO
             {
                 foreach (var ns in settings.Namespaces)
                 {
-                    writer.WriteAttributeString("xmlns", ns.Prefix, null, ns.NamespaceUri);
+                    writer.WriteAttributeString("xmlns", ns.Key, null, ns.Value.ToString());
                 }
             }
 
