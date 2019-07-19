@@ -202,6 +202,15 @@ namespace NetTopologySuite.IO
             writer.WriteGpxStartElement("gpx");
             writer.WriteAttributeString("version", "1.1");
             writer.WriteAttributeString("creator", metadata.Creator);
+
+            if (settings.Namespaces.Any())
+            {
+                foreach (var ns in settings.Namespaces)
+                {
+                    writer.WriteAttributeString("xmlns", ns.Prefix, null, ns.NamespaceUri);
+                }
+            }
+
             if (!metadata.IsTrivial)
             {
                 writer.WriteGpxStartElement("metadata");

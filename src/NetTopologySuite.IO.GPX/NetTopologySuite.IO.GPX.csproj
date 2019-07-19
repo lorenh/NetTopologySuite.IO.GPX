@@ -14,7 +14,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <DebugType>embedded</DebugType>
 
-    <VersionPrefix>0.6.0</VersionPrefix>
+    <VersionPrefix>0.6.1</VersionPrefix>
     <Authors>NetTopologySuite - Team</Authors>
     <Company>NetTopologySuite - Team</Company>
     <RepositoryUrl>https://github.com/NetTopologySuite/NetTopologySuite.IO.GPX.git</RepositoryUrl>
